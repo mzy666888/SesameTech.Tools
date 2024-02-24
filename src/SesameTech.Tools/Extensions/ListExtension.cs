@@ -32,19 +32,6 @@ public static class ListExtension
         return enumerableCopy.SelectMany(c => propertySelector(c).Flatten(propertySelector)).Concat(enumerableCopy);
     }
 
-    public static void ForEach<T>(this IEnumerable<T> source, Action<T> action)
-    {
-        if (null == source)
-        {
-            return;
-        }
-
-        foreach (var item in source)
-        {
-            action(item);
-        }
-    }
-
     public static List<T> Move<T>(this List<T> list, int oldIndex, int newIndex)
     {
         if (oldIndex == newIndex)
