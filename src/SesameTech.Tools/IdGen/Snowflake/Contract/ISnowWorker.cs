@@ -7,16 +7,11 @@
  * 
  */
 
-using System;
-using System.Collections.Generic;
-using System.Text;
+namespace SesameTech.Tools.IdGen.Snowflake.Contract;
 
-namespace SesameTech.Tools.IdGenerator
+internal interface ISnowWorker
 {
-    internal interface ISnowWorker
-    {
-        //Action<OverCostActionArg> GenAction { get; set; }
+    //Action<OverCostActionArg> GenAction { get; set; }
 
-        long NextId();
-    }
+    long NextId();
 }
