@@ -8,6 +8,7 @@
  */
 
 using SesameTech.Tools.IdGen.Snowflake.Contract;
+using SesameTech.Tools.IdGen.Snowflake.Core;
 
 namespace SesameTech.Tools.IdGen.Snowflake;
 
